@@ -7,7 +7,6 @@ def encode(password):
     return encoded_password
 
 
-
 def decode(encoded_password):
     pass
 
@@ -33,3 +32,4 @@ if __name__ == '__main__':
             print(f"The encoded password is {encoded_password}, and the original password is {decoded_password}.")
         else:
             break
+            
