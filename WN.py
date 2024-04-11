@@ -2,7 +2,7 @@ def encode(password):
     encoded_password = ''
     for num in password:
         if num.isdigit():
-            encoded_number = str((int(num) + 8) % 2)
+            encoded_number = str((int(num) + 3) % 10)
             encoded_password += encoded_number
     return encoded_password
 
@@ -22,7 +22,7 @@ if __name__ == '__main__':
         choice = int(input("Please enter an option: "))
         password_input = input("Please enter your password to encode: ")
         if password_input.isnumeric():
-            print("Your password has been encoded and stored!\n")
+            print("Your password has been encoded and stored!")
         else:
             print("Invalid password, please try again.")
         if choice == 1:
