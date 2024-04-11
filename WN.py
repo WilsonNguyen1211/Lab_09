@@ -30,6 +30,6 @@ if __name__ == '__main__':
             print(encoded_password)
         elif choice == 2:
             decoded_password = decode(encoded_password)
-            print(f"The encoded password is {encoded_password}, and original password is {decoded_password}.")
+            print(f"The encoded password is {encoded_password}, and the original password is {decoded_password}.")
         else:
             break
