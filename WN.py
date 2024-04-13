@@ -6,9 +6,14 @@ def encode(password):
             encoded_password += encoded_number
     return encoded_password
 
-
+# BDS decode function
 def decode(encoded_password):
-    pass
+    decoded_password = ''
+    for num in encoded_password:
+        decoded_number = str((int(num) - 3) % 10)
+        decoded_password += decoded_number
+    return decoded_password
+
 
 
 if __name__ == '__main__':
